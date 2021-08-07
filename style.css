@@ -16,8 +16,13 @@
     justify-content: space-around;
     border-bottom: #0000001A solid 1px;
     box-shadow: #0000001A  0px 0px 22px 4px;
-    
 }
+@media screen and (max-width: 425px){
+    .headerBox{
+        height: 12vw;
+    }
+}
+
 
 .boxLogo{
     display: flex;
@@ -25,9 +30,20 @@
     align-items: center;
     width: 20%;
 }
+@media screen and (max-width: 425px){
+    .boxLogo{
+        width: 28%;     
+    }
+}
+
 
 .logo{
     width: 50%
+}
+@media screen and (max-width: 425px){
+    .logo{
+        width: 87%;;
+    }
 }
 
 .boxList{
@@ -92,6 +108,12 @@
     width: 100%;
     height: 45vw;
 }
+@media screen and (max-width: 425px){
+    .boxAllthings{
+        height: 84vw;
+    }
+}
+
 
 .boxCollective{
     display: flex;
@@ -99,6 +121,16 @@
     justify-content: flex-start;
     width: 50%;
 }
+@media screen and (max-width: 425px){
+    .boxCollective{
+        height: 93vw;
+        width: 70%;
+        margin-top: 9%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 
 .boxSubTitle{
     width: 110%;
@@ -106,22 +138,51 @@
     margin: 0 0 5% 20%;
     z-index: 1;
 }
+@media screen and (max-width: 425px){
+    .boxSubTitle{
+        margin-top: 9%;
+        width: 70%;
+    }
+}
+
 
 .subTitle{
     font-size: 4.9vw;
     color: #22254B;
 }
+@media screen and (max-width: 425px){
+    .subTitle{
+        font-size: 9vw;
+    }
+}
+
 
 .boxParagraph{
     height: 9vw;
     width: 79%;
     margin: 0 20%;
 }
+@media screen and (max-width: 425px){
+    .boxParagraph{
+        background: white;
+        width: 60%;
+        height: 21vw;
+        margin-top: -14%;
+    }
+}
 
-.ParagraphConnect{
+
+.paragraphConnect{
     color: #22254B;
     font-size: 2.1vw;
 }
+@media screen and (max-width: 425px){
+    .paragraphConnect{
+        font-size: 3.5vw;
+        opacity: 0.8;
+    }
+}
+
 
 .boxBtnStart{
     display: flex;
@@ -130,6 +191,16 @@
     height: 5vw;
     margin: 0 20%;
 }
+@media screen and (max-width: 425px){
+    .boxBtnStart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 109%;
+        height: 12vw;
+    }
+}
+
 
 .btnStart{
     font-weight: bold;
@@ -142,15 +213,34 @@
     width: 68%;
     height: 3vw;
 }
+@media screen and (max-width: 425px){
+    .btnStart{
+        font-size: 3vw;
+        width: 61%;
+        height: 11vw;
+        z-index: 9999;
+    }
+}
 
 .boxImgOlho{
     display: flex;
     width: 50%;
     height: 30vw;
 }
+@media screen and (max-width: 425px){
+    .boxImgOlho{
+        background: yellow;
+        width: 30%;
+    }
+}
 
 .imgOlho{
     width: 95%;
+}
+@media screen and (max-width: 425px){
+    .imgOlho{
+
+    }
 }
 
 .boxAgile{
@@ -164,11 +254,26 @@
     position: relative;
     padding-bottom: 4vw;
 }
+@media screen and (max-width: 425px){
+    .boxAgile{
+        height: 82vw;
+    }
+}
+
 
 .titleAgile{
     font-size: 3.5vw;
     color: #22254B;
 }
+@media screen and (max-width: 425px){
+    .titleAgile{
+        font-size: 8vw;
+        width: 66%;
+        margin-left: 18%;
+        margin-top: -18%;
+    }
+}
+
 
 .boxParagraphAgile{
     display: flex;
@@ -177,10 +282,25 @@
     width: 51%;
     height: 10vw;
 }
+@media screen and (max-width: 425px){
+    .boxParagraphAgile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
 
 .paragraphAgile{
     font-size: 1.5vw;
     color: #22254B;
+}
+@media screen and (max-width: 425px){
+    .paragraphAgile{
+        font-size: 4vw;
+        width: 63%;
+        text-align: start;
+        margin-top: 25%;
+    }
 }
 
 .navigation{
@@ -196,6 +316,15 @@
     position: absolute;
     bottom: -3.2vw;
     box-shadow: 0px 0px 3px 0px#22254B;
+}
+
+@media screen and (max-width: 425px){
+    .navigation{
+        background: purple;
+        width: 81%;
+        height: 20vw;
+        bottom: -10vw;
+    }
 }
 
 .listGroup{
@@ -243,6 +372,11 @@
     align-items: center;
     padding-top: 3vw;
 }
+@media screen and (max-width: 425px){
+    .boxBlue{
+        height: 100vw;
+    }
+}
 
 .boxGif{
     width: 50%;
@@ -251,9 +385,22 @@
     align-items: center;
     justify-content: flex-end;
 }
+@media screen and (max-width: 425px){
+    .boxGif{
+        width: 65%;
+        height: 36vw;
+        margin-bottom: 33%;
+        margin-right: -50%;
+    }
+}
 
 .gif{
     width: 60%;
+}
+@media screen and (max-width: 425px){
+    .gif{
+        width: 100%;
+    }
 }
 
 .boxText{
@@ -262,6 +409,12 @@
     justify-content: space-evenly;
     width: 50%;
     height: 20vw;
+}
+@media screen and (max-width: 425px){
+    .boxText{
+        height: 44vw;
+        margin-bottom: -51%;
+    }
 }
 
 .boxTitleGif{
@@ -273,6 +426,13 @@
     font-size: 2.7vw;
     color: #fff;
 }
+@media screen and (max-width: 425px){
+    .titleGif{
+        font-size: 7vw;
+        width: 231%;
+        margin-left: -121%;
+    }
+}
 
 .boxParagraphGif{
     width: 40%;
@@ -283,6 +443,14 @@
     font-size: 1.5vw;
     color: #fff;
 }
+@media screen and (max-width: 425px){
+    .paragraphGif{
+        font-size: 4vw;
+        width: 249%;
+        margin-left: -107%;
+        opacity: 0.8;
+    }
+}
 
 
 .groupCustomization{
@@ -291,15 +459,34 @@
     width: 100%;
     height: 37vw;
 }
+@media screen and (max-width: 425px){
+    .groupCustomization{
+        height: 190vw;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
 
 .boxCustomization{
     width: 50%;
     display: flex;
     justify-content: center;
 }
+@media screen and (max-width: 425px){
+    .boxCustomization{
+        width: 100%;
+    }
+}
+
 
 .imgCustomization{
     width: 56%;
+}
+@media screen and (max-width: 425px){
+    .imgCustomization{
+        width: 91%;
+    }
 }
 
 .boxTextCustomization{
@@ -310,15 +497,33 @@
     justify-content: space-between;
     margin: 0 2%;
 }
+@media screen and (max-width: 425px){
+    .boxTextCustomization{
+        width: 76%;
+        height: 66vw;
+    }
+}
 
 .titleCustomization{
     font-size: 3vw;
     color: #22254B;
 }
+@media screen and (max-width: 425px){
+    .titleCustomization{
+        font-size: 9vw;
+    }
+}
 
 .subTitleCustomization{
     font-size: 1.4vw;
     color: #22254B;
+}
+@media screen and (max-width: 425px){
+    .subTitleCustomization{
+        font-size: 5vw;
+        width: 77%;
+        opacity: 0.8;
+    }
 }
 
 .paragraphCustomization{
@@ -326,6 +531,12 @@
     font-size: 1vw;
     font-weight: bold;
     color: #22254B;
+}
+@media screen and (max-width: 425px){
+    .paragraphCustomization{
+        font-size: 4vw;
+        width: 84%;
+    }
 }
 
 .boxBtnCustomization{
@@ -343,6 +554,11 @@
     background: #FFCE06;
     cursor: pointer;
 }
+@media screen and (max-width: 425px){
+    .btnCustomization{
+        display: none;
+    }
+}
 
 
 .boxStrategic{
@@ -354,10 +570,20 @@
     width: 100%;
     height: 32vw;
 }
+@media screen and (max-width: 425px){
+    .boxStrategic{
+        height: 52vw;
+    }
+}
 
 .titleStrategic{
     color: #fff;
     font-size: 5vw;
+}
+@media screen and (max-width: 425px){
+    .titleStrategic{
+        font-size: 10.5vw;
+    }
 }
 
 .paragraphStrategic{
@@ -368,15 +594,24 @@
     color: #fff;
     font-size: 2vw;
 }
+@media screen and (max-width: 425px){
+    .paragraphStrategic{
+        font-size: 4vw;
+        width: 56%;
+        text-align: left;
+        margin-right: 21%;
+    }
+}
 
 
 
 /* */
+
 .boxGroup{
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-}
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ }
 
 .grouping-1{
     display: flex;
@@ -530,16 +765,39 @@ footer{
     align-items: center;
     justify-content: space-evenly;
 }
+@media screen and (max-width: 425px){
+    .boxFree{
+        height: 123vw;
+    }
+}
 
 .titleFree{
     font-size: 3.5vw;
     color: #22254B;
+}
+@media screen and (max-width: 425px){
+    .titleFree{
+        font-size: 9vw;
+    }
 }
 
 .paragraphFree{
     font-size: 1.6vw;
     width: 61%;
     color: #22254B;
+}
+@media screen and (max-width: 425px){
+    .paragraphFree{
+        font-size: 4.5vw;
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width: 425px){
+    .line{
+        display: none;
+    }
 }
 
 .btnFree{
@@ -553,6 +811,13 @@ footer{
     background: #FFCE06;
     cursor: pointer;
 }
+@media screen and (max-width: 425px){
+    .btnFree{
+        width: 42%;
+        height: 12vw;
+        font-size: 4vw;
+    }
+}
 
 .line{
     margin-left: 18%;
@@ -563,6 +828,16 @@ footer{
 
 .boxsFooter{
     display: flex;
+    align-items: center;
+    height: 31vw;
+}
+@media screen and (max-width: 425px){
+    .boxsFooter{
+        flex-direction: column;
+        width: 100%;
+        height: 76vw;
+        align-items: center;
+    }
 }
 
 .boxFooter{
@@ -570,36 +845,69 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 49vw;
+    height: 63vw;
+}
+@media screen and (max-width: 425px){
+    .boxFooter{
+        height: 172vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .boxTextFooter{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    height: 20vw;
+    width: 44%;
+}
+@media screen and (max-width: 425px){
+    .boxTextFooter{
+        width: 80%;
+        height: 45vw;
+    }
 }
 
 .subtitleFooter{
-    width: 16%;
+    width: 27%;
     margin: 0 27% 3%;
     font-size: 1.8vw;
     color: #22254B;
 }
+@media screen and (max-width: 425px){
+    .subtitleFooter{
+        font-size: 5vw;
+        width: 25%;
+        margin-left: 5%;
+    }
+}
+
 
 .paragraphFooter{
     font-size: 1.2vw;
-    width: 70%;
+    width: 71%;
     margin-left: 27%;
     margin-bottom: 4%;
     color: #22254B;
+}
+@media screen and (max-width: 425px){
+    .paragraphFooter{
+        margin-left: 5%;
+        font-size: 4vw;
+        width: 79%;
+    }
 }
 
 .boxsStrytegy{
     display: flex;
     align-items: center;
     
+}
+@media screen and (max-width: 425px){
+    .boxsStrytegy{
+
+    }
 }
 
 .logoFooter{
@@ -612,10 +920,26 @@ footer{
     width: 50%;
     display: flex;
     text-align: center;
+    margin-bottom: 2%;
+    justify-content: space-around;
 }
 
-.boxStories, .boxSocial, .boxHelp{
-    width: 33.33%;
+.boxStories{
+    width: 30.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxSocial{
+    width: 30.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxHelp{
+    width: 30.33%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -628,23 +952,22 @@ footer{
     margin-bottom: 8%;
 }
 
+
 .listSocialNetworks{
     width: 60%;
     height: 8vw;
 }
 
 .listHelp{
+    display: flex;
+    flex-direction: column;
     width: 60%;
-    height: 8vw;
+    height: 12vw;
 }
 
 .linkNavFooter{
     font-size: 1.2vw;
     color: #22254B;
-}
-
-.listNavFooter{
-    margin-top: 8%;
 }
 
 .linkNavFooterDifferent{

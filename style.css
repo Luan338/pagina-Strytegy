@@ -7,8 +7,9 @@
 }
 
 /*Inicio da Header*/
-
-.headerBox{
+#headerBox{
+    position: fixed;
+    z-index: 9;
     width: 100%;
     background: #fff;
     display: flex;
@@ -18,8 +19,9 @@
     box-shadow: #0000001A  0px 0px 22px 4px;
 }
 @media screen and (max-width: 425px){
-    .headerBox{
+    #headerBox{
         height: 12vw;
+        z-index: 999;
     }
 }
 
@@ -38,7 +40,8 @@
 
 
 .logo{
-    width: 50%
+    width: 50%;
+    cursor: pointer;
 }
 @media screen and (max-width: 425px){
     .logo{
@@ -46,12 +49,65 @@
     }
 }
 
-.boxList{
+
+#nav{
+    width: 48%;
+    display: flex;
+}
+@media screen and (max-width: 425px){
+    #nav{
+        display: none;
+    }
+    
+#headerBox.active #nav{
+    display: flex;
+    position: fixed;
+    height: 50vw;
+    width: 100%;
+    background: #fff;
+    margin-top: 12%;
+    border-bottom: #0000001A solid 1px;
+    box-shadow: #0000001A  0px 0px 22px 4px;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    #boxBtnMenu{
+        width: 23%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+#btnMenu{
+    display: none;
+}
+@media screen and (max-width: 425px){
+    #btnMenu{
+        display: block;
+        width: 20%;
+    }
+}
+
+
+#boxList{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 320%;
     height: 5vw;
+}
+@media screen and (max-width: 425px){
+    #boxList{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        height: 50vw;
+
+    }
 }
 
 .linkHeader1{
@@ -63,17 +119,35 @@
     font-size: 1.5vw;
     width: 24%;
 }
+@media screen and (max-width: 425px){
+    .listHeader{
+        font-size: 4vw;
+        width: 35%;
+        height: 8vw;
+    }
+    .linkHeader1{
+        font-size: 3vw;
+    }
+}
 
 .linkHeader, .linkHeader1{
     color: #25294C;
 }
 
-.boxBtnEnter{
+#boxBtnEnter{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 20%;
+    width: 197%;
     height: 5vw;
+}
+@media screen and (max-width: 425px){
+    #boxBtnEnter {
+        height: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 .btnEnter{
@@ -86,6 +160,18 @@
     font-size: 1vw;
     width: 68%;
     height: 3vw;
+    transition: 0.5s all;
+}
+.btnEnter:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 425px){
+    .btnEnter{
+        margin: -9% 0 4% -153%;
+        width: 71%;
+        font-size: 3vw;
+        height: 7vw;
+    }
 }
 
 .btnLinguage{
@@ -98,6 +184,12 @@
     font-weight: bolder;
     cursor: pointer;
 }
+@media screen and (max-width: 425px){
+    .btnLinguage{
+        margin-left: -154%;
+    }
+}
+
 /*Fim da Header*/
 
 /*Inicio da Main*/
@@ -212,13 +304,17 @@
     font-size: 1vw;
     width: 68%;
     height: 3vw;
+    transition: 0.5s all;
+}
+.btnStart:hover{
+    transform: scale(1.1);
 }
 @media screen and (max-width: 425px){
     .btnStart{
         font-size: 3vw;
         width: 61%;
         height: 11vw;
-        z-index: 9999;
+        z-index: 99;
     }
 }
 
@@ -553,6 +649,10 @@
     border: none;
     background: #FFCE06;
     cursor: pointer;
+    transition: 0.5s all;
+}
+.btnCustomization:hover{
+    transform: scale(1.1);
 }
 @media screen and (max-width: 425px){
     .btnCustomization{
@@ -810,6 +910,10 @@ footer{
     border: none;
     background: #FFCE06;
     cursor: pointer;
+    transition: 0.5s all;
+}
+.btnFree:hover{
+    transform: scale(1.1);
 }
 @media screen and (max-width: 425px){
     .btnFree{

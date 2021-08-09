@@ -64,10 +64,16 @@
             </div>
             <nav class="navigation">
                 <ul class="listGroup">
-                    <li class="list"><a class="change" href="#">Meetings and workshops</a></li>
+                    <div class="boxLeftArrow">
+                        <img class="leftArrow" src="img/iconfinder_right_380008 (1).svg" alt="left">
+                    </div>
+                    <li class="list-one"><a class="change" href="#">Meetings and workshops</a></li>
                     <li class="list"><a class="change" href="#">Walls and Canvases</a></li>
                     <li class="list"><a class="change1" href="#">Export and Share</a></li>
                     <li class="list"><a class="change" href="#">Organizations and Workspaces</a></li>
+                    <div class="boxRigthArrow">
+                        <img class="rigthArrow" src="img/iconfinder_right_380008 (2).svg" alt="rigth">
+                    </div>
                 </ul>
             </nav>
         </div> 
@@ -115,9 +121,12 @@
                     <img class="imgGroup" src="img/Grupo 10264@3x.png" alt="img-mao">
                     <p class="paragraphStartups">Ambitious young startups that need to move fast with purpose.</p>
                 </div>
-                <div class="boxManagement">
-                    <p class="paragraphManagement">Management professionals seeking to integrate collective intelligence and strategic vision with their project delivery.</p>
+                <div class="groupManagement">
+                    <div class="boxManagement">
+                        <p class="paragraphManagement">Management professionals seeking to integrate collective intelligence and strategic vision with their project delivery.</p>
+                    </div>
                 </div>
+                
             </div>
             
             <div class="grouping-2">
@@ -137,6 +146,17 @@
     </main>
 
     <footer>
+        <div class="wavy">
+            <svg viewBox="0 150 1440 120">
+                <defs>
+                    <filter id="wavy.inline" x="0" y="0" width="1461" height="266.3" filterUnits="userSpaceOnUse">
+                        <feOffset dy="6" input="SourceAlpha"></feOffset>
+                        <feGaussianBlur stdDeviation="3.5" result="blur"></feGaussianBlur>
+                        <feFlood flood-opacity="0.078"></feFlood>
+                        <feComposite operator="in" in2="blur"></feComposite>
+                        <feComposite in="SourceGraphic"></feComposite></filter></defs>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#wavy.inline)"><path id="wavy.inline-2" data-name="wavy.inline" d="M0,160l80,21.3c80,21.7,240,63.7,400,64,160-.3,320-42.3,480-58.6,160-15.7,320-5.7,400,0l80,5.3V0H0Z" fill="#fff"></path></g></svg>
+        </div>
         <div class="boxFooter">
                 <div class="boxFree">
                     <h2 class="titleFree">Free, like thinking</h2>

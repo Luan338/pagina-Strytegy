@@ -411,15 +411,15 @@
 }
 @media screen and (max-width: 425px){
     .boxAgile{
-        height: 101vw;
-        margin-top: 20%;
+        height: 77vw;
+        margin-top: 35%;
     }
 }
 
 @media screen and (max-width: 425px){
     .boxTitleAgile{
         width: 100%;
-        height: 19vw;
+        height: 21vw;
     }
 }
 
@@ -430,9 +430,9 @@
 }
 @media screen and (max-width: 425px){
     .titleAgile{
-        font-size: 8vw;
-        width: 69%;
-        margin-left: 13%;
+        font-size: 7.6vw;
+        width: 75%;
+        margin-left: 18%;
     }
 }
 
@@ -462,7 +462,7 @@
         font-size: 4vw;
         width: 63%;
         text-align: start;
-        margin-right: 11%;
+        margin-right: 1%;
     }
 }
 
@@ -483,8 +483,8 @@
 
 @media screen and (max-width: 425px){
     .navigation{
-        background: purple;
-        width: 81%;
+        border: solid 1px #22254B;
+        width: 65%;
         height: 20vw;
         bottom: -10vw;
     }
@@ -498,6 +498,62 @@
     align-items: center;
     justify-content: space-between;
 }
+@media screen and (max-width: 425px){
+    .listGroup{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .boxLeftArrow{
+        display: flex;
+        width: 8%;
+        height: 9vw;
+    }
+    .boxRigthArrow{
+        display: flex;
+        justify-content: flex-end;
+        width: 8%;
+        height: 9vw;
+    }
+}
+
+.leftArrow, .rigthArrow{
+    display: none;
+}
+@media screen and (max-width: 425px){
+    .leftArrow{
+        display: flex;
+        width: 60%;
+    }
+    .rigthArrow{
+        display: flex;
+        width: 60%;
+    }
+}
+
+.list-one{
+    display: flex;
+    align-items: center;
+    width: 24%;
+    justify-content: center;
+    height: 5vw;
+    text-align: center;
+    padding: 0 2.7vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.list-one:hover{
+    background: #FFCE06;
+    font-weight: bolder;
+}
+@media screen and (max-width: 425px){
+    .list-one{
+        background: yellow;
+        width: 75%;
+        height: 15vw;
+    }
+}
 
 .list{
     display: flex;
@@ -510,6 +566,11 @@
     border-radius: 5px;
     cursor: pointer;
 }
+@media screen and (max-width: 425px){
+    .list{
+        display: none;
+    }
+}
 
 .change1{
     font-size: 1.4vw;
@@ -519,6 +580,12 @@
 .change{
     font-size: 1.3vw;
     color: #22254B;
+}
+@media screen and (max-width: 425px){
+    .change{
+        font-size: 5vw;
+        width: 100%;
+    }
 }
 
 .list:hover{
@@ -740,7 +807,8 @@
 }
 @media screen and (max-width: 425px){
     .boxStrategic{
-        height: 52vw;
+        justify-content: start;
+        height: 75vw;
     }
 }
 
@@ -751,6 +819,7 @@
 }
 @media screen and (max-width: 425px){
     .titleStrategic{
+        margin: 5%;
         font-size: 10.5vw;
     }
 }
@@ -781,12 +850,22 @@
     display: flex;
     flex-direction: column;
  }
+ @media screen and (max-width: 425px){
+     .boxGroup{
+        height: 33vw;
+     }
+ }
 
 .grouping-1{
     display: flex;
     justify-content: center;
     position: relative;
     height: 20vw;
+}
+@media screen and (max-width: 425px){
+    .grouping-1{
+
+    }
 }
 
 .boxParagraphSpecialists{
@@ -804,6 +883,20 @@
     left: 15%;
     bottom: 61%;
 }
+@media screen and (max-width: 425px){
+    .boxParagraphSpecialists{
+        left: -24%;
+        bottom: 26%;
+        width: 31%;
+        height: 32vw;
+    }
+}
+@media screen and (max-width: 425px){
+
+    .groupManagement{
+    
+    }
+}
 
 .boxManagement{
     background: #fff;
@@ -819,6 +912,11 @@
     position: absolute;
     right: 15%;
     bottom: 61%;
+}
+@media screen and (max-width: 425px){
+    .boxManagement{
+
+    }
 }
 
 .paragraphSpecialists, .paragraphManagement, .paragraphProfessionals{
@@ -843,6 +941,14 @@
     position: absolute;
     top: -36%;
 }
+@media screen and (max-width: 425px){
+    .boxStartups{
+        text-align: center;
+        width: 63%;
+        height: 59vw;
+        top: -152%;
+    }
+}
 
 .imgGroup{
     width: 80%;
@@ -852,12 +958,23 @@
     width: 95%;
     font-size: 1.5vw;
 }
+@media screen and (max-width: 425px){
+    .paragraphStartups{
+        font-size: 4vw;
+        width: 74%;
+    }
+}
 
 .grouping-2{
     display: flex;
     justify-content: center;
     position: relative;
     height: 24vw;
+}
+@media screen and (max-width: 425px){
+    .grouping-2{
+        display: none;
+    }
 }
 
 .boxProfessionals{
@@ -920,6 +1037,10 @@
     text-align: center;
     width: 80%;
     font-size: 1.5vw;
+}
+
+.wave{
+background: red;
 }
 
 footer{
@@ -997,7 +1118,7 @@ footer{
     margin-left: 18%;
     border: 0.5px solid #22254B;
     opacity: 0.1;
-    width: 73%;
+    width: 62%;
 }
 
 .boxsFooter{

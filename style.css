@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +8,7 @@
     list-style: none;
     text-decoration: none;
 }
+
 
 /*Inicio da Header*/
 #headerBox{
@@ -202,7 +206,8 @@
 }
 @media screen and (max-width: 425px){
     .boxAllthings{
-        height: 84vw;
+        height: 130vw;
+        position: relative;
     }
 }
 
@@ -215,9 +220,9 @@
 }
 @media screen and (max-width: 425px){
     .boxCollective{
-        height: 93vw;
+        height: 120vw;
         width: 70%;
-        margin-top: 9%;
+        margin-top: 34%;
         display: flex;
         justify-content: space-between;
     }
@@ -229,11 +234,12 @@
     display: flex;
     margin: 0 0 5% 20%;
     z-index: 1;
+    font-family: Roboto;
 }
 @media screen and (max-width: 425px){
     .boxSubTitle{
         margin-top: 9%;
-        width: 70%;
+        width: 98%;
     }
 }
 
@@ -256,13 +262,23 @@
 }
 @media screen and (max-width: 425px){
     .boxParagraph{
-        background: white;
-        width: 60%;
-        height: 21vw;
-        margin-top: -14%;
+        margin-top: 21%;
+        width: 174%;
+        height: 68vw;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        overflow: hidden;
     }
 }
 
+
+@media screen and (max-width: 425px){
+    .boxConnectMobile{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
 
 .paragraphConnect{
     color: #22254B;
@@ -270,11 +286,50 @@
 }
 @media screen and (max-width: 425px){
     .paragraphConnect{
-        font-size: 3.5vw;
+        text-align: start;
+        font-size: 5.5vw;
         opacity: 0.8;
+        width: 73%;
+        margin-right: 28%;
     }
 }
 
+@media screen and (max-width: 425px){
+    .boxImgsMobile{
+        position: relative;
+        width: 100%;
+        height: 23vw;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.imgMobile{
+    display: none;
+    width: 50%;
+    position: absolute;
+}
+
+@media screen and (max-width: 425px){
+    .imgMobile{
+        display: flex;
+    }
+    .mb1{
+        left: 62%;
+        width: 52%;
+        bottom: 5%;
+    }
+    .mb2{
+        left: 91%;
+        width: 33%;
+        top: 11%;
+    }
+    .mb3{
+        left: 41%;
+        width: 21%;
+        top: 55%;
+    }
+}
 
 .boxBtnStart{
     display: flex;
@@ -288,8 +343,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 109%;
-        height: 12vw;
+        width: 165%;
+        height: 26vw;
+        margin-bottom: -50%;
     }
 }
 
@@ -312,8 +368,8 @@
 @media screen and (max-width: 425px){
     .btnStart{
         font-size: 3vw;
-        width: 61%;
-        height: 11vw;
+        width: 51%;
+        height: 12vw;
         z-index: 99;
     }
 }
@@ -325,8 +381,10 @@
 }
 @media screen and (max-width: 425px){
     .boxImgOlho{
-        background: yellow;
-        width: 30%;
+        width: 68%;
+        overflow: hidden;
+        height: auto;
+        margin-bottom: 52%;
     }
 }
 
@@ -335,7 +393,8 @@
 }
 @media screen and (max-width: 425px){
     .imgOlho{
-
+        width: 260%;
+        margin: 0 5%;
     }
 }
 
@@ -352,21 +411,28 @@
 }
 @media screen and (max-width: 425px){
     .boxAgile{
-        height: 82vw;
+        height: 101vw;
+        margin-top: 20%;
     }
 }
 
+@media screen and (max-width: 425px){
+    .boxTitleAgile{
+        width: 100%;
+        height: 19vw;
+    }
+}
 
 .titleAgile{
     font-size: 3.5vw;
     color: #22254B;
+    font-family: Roboto;
 }
 @media screen and (max-width: 425px){
     .titleAgile{
         font-size: 8vw;
-        width: 66%;
-        margin-left: 18%;
-        margin-top: -18%;
+        width: 69%;
+        margin-left: 13%;
     }
 }
 
@@ -383,6 +449,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        height: 31vw;
     }
 }
 
@@ -395,7 +462,7 @@
         font-size: 4vw;
         width: 63%;
         text-align: start;
-        margin-top: 25%;
+        margin-right: 11%;
     }
 }
 
@@ -603,6 +670,7 @@
 .titleCustomization{
     font-size: 3vw;
     color: #22254B;
+    font-family: Roboto;
 }
 @media screen and (max-width: 425px){
     .titleCustomization{
@@ -678,6 +746,7 @@
 
 .titleStrategic{
     color: #fff;
+    font-family: Roboto;
     font-size: 5vw;
 }
 @media screen and (max-width: 425px){
@@ -874,6 +943,7 @@ footer{
 .titleFree{
     font-size: 3.5vw;
     color: #22254B;
+    font-family: Roboto;
 }
 @media screen and (max-width: 425px){
     .titleFree{
@@ -939,7 +1009,7 @@ footer{
     .boxsFooter{
         flex-direction: column;
         width: 100%;
-        height: 76vw;
+        height: 100vw;
         align-items: center;
     }
 }
@@ -953,7 +1023,7 @@ footer{
 }
 @media screen and (max-width: 425px){
     .boxFooter{
-        height: 172vw;
+        height: 223vw;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -998,8 +1068,8 @@ footer{
 @media screen and (max-width: 425px){
     .paragraphFooter{
         margin-left: 5%;
-        font-size: 4vw;
-        width: 79%;
+        font-size: 4.5vw;
+        width: 89%;
     }
 }
 
@@ -1019,6 +1089,13 @@ footer{
     margin-left: 27%;
     margin-right: 3%;
 }
+@media screen and (max-width: 425px){
+    .logoFooter{
+        width: 10%;
+        margin-left: 5%;
+        margin-right: 3%;
+    }
+}
 
 .boxNavFooter{
     width: 50%;
@@ -1027,12 +1104,24 @@ footer{
     margin-bottom: 2%;
     justify-content: space-around;
 }
+@media screen and (max-width: 425px){
+    .boxNavFooter{
+        width: 73%;
+        height: 34vw;
+        margin-top: 5%;
+    }
+}
 
 .boxStories{
     width: 30.33%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+@media screen and (max-width: 425px){
+    .boxStories{
+        display: none;
+    }
 }
 
 .boxSocial{
@@ -1041,12 +1130,23 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+@media screen and (max-width: 425px){
+    .boxSocial{
+        width: 50%;
+    }
+}
 
 .boxHelp{
     width: 30.33%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+@media screen and (max-width: 425px){
+    .boxHelp{
+        width: 50%;
+        height: 50vw;
+    }
 }
 
 .subtitleFooterNav{
@@ -1055,11 +1155,26 @@ footer{
     margin-top: 15%;
     margin-bottom: 8%;
 }
+@media screen and (max-width: 425px){
+    .subtitleFooterNav{
+        font-size: 7vw;
+        width: 77%;
+    }
+}
 
 
 .listSocialNetworks{
     width: 60%;
     height: 8vw;
+}
+@media screen and (max-width: 425px){
+    .listSocialNetworks{
+        width: 69%;
+        height: 18vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .listHelp{
@@ -1068,10 +1183,29 @@ footer{
     width: 60%;
     height: 12vw;
 }
+@media screen and (max-width: 425px){
+    .listHelp{
+        justify-content: space-between;
+        width: 98%;
+        height: 24vw;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    .listNavFooter{
+
+    }
+}
 
 .linkNavFooter{
     font-size: 1.2vw;
     color: #22254B;
+}
+@media screen and (max-width: 425px){
+    .linkNavFooter{
+        font-size: 4vw;
+    }
 }
 
 .linkNavFooterDifferent{
@@ -1079,8 +1213,18 @@ footer{
     color: #22254B;
     text-transform: uppercase;
 }
+@media screen and (max-width: 425px){
+    .linkNavFooterDifferent{
+        font-size: 4vw;
+    }
+}
 
 .strytegy{
     opacity: 0.8;
     font-size: 1.3vw;
+}
+@media screen and (max-width: 425px){
+    .strytegy{
+        font-size: 4vw;
+    }
 }

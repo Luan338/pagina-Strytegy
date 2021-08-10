@@ -808,7 +808,7 @@
 @media screen and (max-width: 425px){
     .boxStrategic{
         justify-content: start;
-        height: 75vw;
+        height: 81vw;
     }
 }
 
@@ -852,7 +852,7 @@
  }
  @media screen and (max-width: 425px){
      .boxGroup{
-        height: 33vw;
+        height: 71vw;
      }
  }
 
@@ -864,7 +864,9 @@
 }
 @media screen and (max-width: 425px){
     .grouping-1{
-
+        height: 73vw;
+        bottom: 59%;
+        overflow: hidden;
     }
 }
 
@@ -885,16 +887,10 @@
 }
 @media screen and (max-width: 425px){
     .boxParagraphSpecialists{
-        left: -24%;
-        bottom: 26%;
+        left: -21%;
+        bottom: 14%;
         width: 31%;
-        height: 32vw;
-    }
-}
-@media screen and (max-width: 425px){
-
-    .groupManagement{
-    
+        height: 38vw;
     }
 }
 
@@ -915,7 +911,10 @@
 }
 @media screen and (max-width: 425px){
     .boxManagement{
-
+        left: 90%;
+        bottom: 14%;
+        width: 31%;
+        height: 38vw;
     }
 }
 
@@ -946,7 +945,7 @@
         text-align: center;
         width: 63%;
         height: 59vw;
-        top: -152%;
+        top: 17%;
     }
 }
 

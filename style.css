@@ -10,6 +10,7 @@
 }
 
 
+
 /*Inicio da Header*/
 #headerBox{
     position: fixed;
@@ -24,15 +25,15 @@
 }
 @media screen and (max-width: 425px){
     #headerBox{
-        height: 12vw;
+        height: 3rem;
         z-index: 999;
     }
 }
 
-
+/*Inicio parte da logo*/
 .boxLogo{
     display: flex;
-    justify-content:left; 
+    justify-content: left;
     align-items: center;
     width: 20%;
 }
@@ -41,7 +42,6 @@
         width: 28%;     
     }
 }
-
 
 .logo{
     width: 50%;
@@ -52,10 +52,11 @@
         width: 87%;;
     }
 }
+/*Fim parte da logo*/
 
-
+/*Navegação da Header*/
 #nav{
-    width: 48%;
+    width: 50%;
     display: flex;
 }
 @media screen and (max-width: 425px){
@@ -69,13 +70,14 @@
     height: 50vw;
     width: 100%;
     background: #fff;
-    margin-top: 12%;
+    margin-top: 11.5%;
     border-bottom: #0000001A solid 1px;
     box-shadow: #0000001A  0px 0px 22px 4px;
     }
 }
+/*Fim navegação da Header*/
 
-
+/*Botão Menu do mobile*/
 @media screen and (max-width: 425px){
     #boxBtnMenu{
         width: 23%;
@@ -93,14 +95,15 @@
         width: 20%;
     }
 }
+/*Botão Menu do mobile*/
 
-
+/*Lista da nav da Header*/
 #boxList{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 320%;
-    height: 5vw;
+
 }
 @media screen and (max-width: 425px){
     #boxList{
@@ -110,7 +113,6 @@
         align-items: flex-end;
         flex-direction: column-reverse;
         height: 50vw;
-
     }
 }
 
@@ -137,7 +139,9 @@
 .linkHeader, .linkHeader1{
     color: #25294C;
 }
+/*Fim da lista da nav da Header*/
 
+/*Botões da Header*/
 #boxBtnEnter{
     display: flex;
     align-items: center;
@@ -181,7 +185,7 @@
 .btnLinguage{
     padding: 3%;
     font-size: 1vw;
-    border: solid 2px #25294C;
+    border: solid 1px #25294C;
     color: #25294C;
     border-radius: 73px;
     text-transform: uppercase;
@@ -193,11 +197,12 @@
         margin-left: -154%;
     }
 }
-
+/* Fim botões da Header*/
 /*Fim da Header*/
 
 /*Inicio da Main*/
 
+/*Primeira caixa da main*/
 .boxAllthings{
     display: flex;
     align-items: center;
@@ -210,8 +215,7 @@
         position: relative;
     }
 }
-
-
+/*Caixa com Titulo, paragraph e o botão*/
 .boxCollective{
     display: flex;
     flex-direction: column;
@@ -228,7 +232,6 @@
     }
 }
 
-
 .boxSubTitle{
     width: 110%;
     display: flex;
@@ -243,7 +246,6 @@
     }
 }
 
-
 .subTitle{
     font-size: 4.9vw;
     color: #22254B;
@@ -253,7 +255,6 @@
         font-size: 9vw;
     }
 }
-
 
 .boxParagraph{
     height: 9vw;
@@ -271,7 +272,6 @@
         overflow: hidden;
     }
 }
-
 
 @media screen and (max-width: 425px){
     .boxConnectMobile{
@@ -294,6 +294,50 @@
     }
 }
 
+.boxBtnStart{
+    display: flex;
+    justify-content: left;
+    width: 36%;
+    height: 5vw;
+    margin: 0 20%;
+}
+@media screen and (max-width: 425px){
+    .boxBtnStart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 165%;
+        height: 26vw;
+        margin-bottom: -50%;
+    }
+}
+
+.btnStart{
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background: #FFCE06;
+    color: #25294C;
+    cursor: pointer;
+    font-size: 1vw;
+    width: 68%;
+    height: 3vw;
+    transition: 0.5s all;
+}
+.btnStart:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 425px){
+    .btnStart{
+        font-size: 3vw;
+        width: 51%;
+        height: 12vw;
+        z-index: 99;
+    }
+}
+/* Fim Caixa com Titulo, paragraph e o botão*/
+
+/*Caixa das imagens*/
 @media screen and (max-width: 425px){
     .boxImgsMobile{
         position: relative;
@@ -331,49 +375,6 @@
     }
 }
 
-.boxBtnStart{
-    display: flex;
-    justify-content: left;
-    width: 36%;
-    height: 5vw;
-    margin: 0 20%;
-}
-@media screen and (max-width: 425px){
-    .boxBtnStart{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 165%;
-        height: 26vw;
-        margin-bottom: -50%;
-    }
-}
-
-
-.btnStart{
-    font-weight: bold;
-    border: none;
-    border-radius: 3px;
-    background: #FFCE06;
-    color: #25294C;
-    cursor: pointer;
-    font-size: 1vw;
-    width: 68%;
-    height: 3vw;
-    transition: 0.5s all;
-}
-.btnStart:hover{
-    transform: scale(1.1);
-}
-@media screen and (max-width: 425px){
-    .btnStart{
-        font-size: 3vw;
-        width: 51%;
-        height: 12vw;
-        z-index: 99;
-    }
-}
-
 .boxImgOlho{
     display: flex;
     width: 50%;
@@ -397,7 +398,10 @@
         margin: 0 5%;
     }
 }
+/*Caixa das imagens*/
+/*Fim da Primeira caixa da main*/
 
+/*Segunda caixa da main*/
 .boxAgile{
     background: linear-gradient(#fff, #fffae4);
     display: flex;
@@ -416,6 +420,7 @@
     }
 }
 
+/*Grupo subtitulo e paragrafo*/
 @media screen and (max-width: 425px){
     .boxTitleAgile{
         width: 100%;
@@ -435,7 +440,6 @@
         margin-left: 18%;
     }
 }
-
 
 .boxParagraphAgile{
     display: flex;
@@ -465,7 +469,9 @@
         margin-right: 1%;
     }
 }
+/*Grupo subtitulo e paragrafo*/
 
+/*Navegação principal*/
 .navigation{
     background: #fff;
     margin: 0 18%;
@@ -542,6 +548,8 @@
     padding: 0 2.7vw;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.4vw;
+    color: #22254B;
 }
 .list-one:hover{
     background: #FFCE06;
@@ -550,8 +558,9 @@
 @media screen and (max-width: 425px){
     .list-one{
         background: yellow;
-        width: 75%;
         height: 15vw;
+        font-size: 5vw;
+        width: 80%;
     }
 }
 
@@ -565,6 +574,8 @@
     padding: 0 2.7vw;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.4vw;
+    color: #22254B;
 }
 @media screen and (max-width: 425px){
     .list{
@@ -572,17 +583,8 @@
     }
 }
 
-.change1{
-    font-size: 1.4vw;
-    color: #22254B;
-}
-
-.change{
-    font-size: 1.3vw;
-    color: #22254B;
-}
 @media screen and (max-width: 425px){
-    .change{
+    .list{
         font-size: 5vw;
         width: 100%;
     }
@@ -592,7 +594,10 @@
     background: #FFCE06;
     font-weight: bolder;
 }
+/*Fim Navegação principal*/
+/*Segunda caixa da main*/
 
+/*Caixa com o gif*/
 .boxBlue{
     background: #22254B;
     width: 100%;
@@ -681,8 +686,9 @@
         opacity: 0.8;
     }
 }
+/*Fim Caixa com o gif*/
 
-
+/*Caixa Custom*/
 .groupCustomization{
     display: flex;
     align-items: center;
@@ -697,7 +703,6 @@
     }
 }
 
-
 .boxCustomization{
     width: 50%;
     display: flex;
@@ -708,7 +713,6 @@
         width: 100%;
     }
 }
-
 
 .imgCustomization{
     width: 56%;
@@ -794,8 +798,9 @@
         display: none;
     }
 }
+/*Caixa Custom*/
 
-
+/*Caixa estrategica*/
 .boxStrategic{
     background: #22254B;
     display: flex;
@@ -840,19 +845,64 @@
         margin-right: 21%;
     }
 }
+/*Caixa estrategica*/
 
-
-
-/* */
-
+/*Caixa com os cards*/
 .boxGroup{
     width: 100%;
     display: flex;
     flex-direction: column;
  }
+
+ .boxGroup .card{
+     transition: .5s;
+ }
+ 
+ .boxGroup:hover .card-1{
+     left: 14%;
+     top: -40%;
+ }
+
+ .boxGroup:hover .card-2{
+    top: -40%;
+}
+
+.boxGroup:hover .card-3{
+    right: 14%;
+    top: -40%;
+}
+
+.boxGroup:hover .card-4{
+    left: 12%;
+    top: -40%;
+}
+
+.boxGroup:hover .card-5{
+    right: 12%;
+    bottom: 40%;
+}
+ 
  @media screen and (max-width: 425px){
      .boxGroup{
         height: 71vw;
+     }
+     .boxGroup:hover .card-1{
+        left: -21%;
+        bottom: 0;
+     }
+     .boxGroup:hover .card-2{
+        left: auto;
+        bottom: 0;
+     }
+     .boxGroup:hover .card-3{
+        left: auto;
+        bottom: 0;
+     }.boxGroup:hover .card-4{
+        left: auto;
+        bottom: 0;
+     }.boxGroup:hover .card-5{
+        left: auto;
+        bottom: 0;
      }
  }
 
@@ -1037,10 +1087,8 @@
     width: 80%;
     font-size: 1.5vw;
 }
+/*Caixa com os cards*/
 
-.wave{
-background: red;
-}
 
 footer{
     background: linear-gradient(rgba(83, 33, 196, 0.1) 10%, rgba(34, 37, 75, 0.1) 100%);
@@ -1348,3 +1396,4 @@ footer{
         font-size: 4vw;
     }
 }
+

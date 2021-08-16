@@ -1190,7 +1190,7 @@ footer{
 }
 @media screen and (max-width: 425px){
     .subtitleFooter{
-        font-size: 5vw;
+        font-size: 4.5vw;
         width: 25%;
         margin-left: 5%;
     }
@@ -1207,7 +1207,7 @@ footer{
 @media screen and (max-width: 425px){
     .paragraphFooter{
         margin-left: 5%;
-        font-size: 4.5vw;
+        font-size: 4vw;
         width: 89%;
     }
 }

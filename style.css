@@ -491,7 +491,7 @@
         border: solid 1px #22254B;
         width: 65vw;
         height: 20vw;
-        bottom: -10vw;
+        top: 14vw;
         position: relative;
         overflow: hidden;
         justify-content: flex-start;

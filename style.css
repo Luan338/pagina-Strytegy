@@ -23,7 +23,7 @@
 }
 @media screen and (max-width: 425px){
     #headerBox{
-        height: 3rem;
+        height: 5rem;
         z-index: 999;
     }
 }
@@ -47,7 +47,7 @@
 }
 @media screen and (max-width: 425px){
     .logo{
-        width: 87%;;
+        width: 98%;
     }
 }
 /*Fim parte da logo*/
@@ -68,7 +68,7 @@
     height: 50vw;
     width: 100%;
     background: #fff;
-    margin-top: 11.5%;
+    margin-top: 18.5%;
     border-bottom: #0000001A solid 1px;
     box-shadow: #0000001A  0px 0px 22px 4px;
     }
@@ -90,7 +90,7 @@
 @media screen and (max-width: 425px){
     #btnMenu{
         display: block;
-        width: 20%;
+        width:  26%;
     }
 }
 /*Botão Menu do mobile*/

@@ -213,7 +213,7 @@
         position: relative;
     }
 }
-/*Caixa com Titulo, paragraph e o botão*/
+/*Caixa com Titulo, e o botão*/
 .boxCollective{
     display: flex;
     flex-direction: column;
@@ -822,60 +822,13 @@
     display: flex;
     flex-direction: column;
  }
-/*
- .boxGroup .card{
-     transition: .5s;
- }
- 
- .boxGroup:hover .card-1{
-     left: 14%;
-     top: -40%;
- }
 
- .boxGroup:hover .card-2{
-    top: -40%;
-}
-
-.boxGroup:hover .card-3{
-    right: 14%;
-    top: -40%;
-}
-
-.boxGroup:hover .card-4{
-    left: 12%;
-    top: -40%;
-}
-
-.boxGroup:hover .card-5{
-    right: 12%;
-    bottom: 40%;
-}
- */
  @media screen and (max-width: 425px){
      .boxGroup{
-        height: 74vw;
+        height: 70vw;
+        position: relative;
      }
     }
-    /*
-     .boxGroup:hover .card-1{
-        left: -21%;
-        bottom: 0;
-     }
-     .boxGroup:hover .card-2{
-        left: auto;
-        bottom: 0;
-     }
-     .boxGroup:hover .card-3{
-        left: auto;
-        bottom: 0;
-     }.boxGroup:hover .card-4{
-        left: auto;
-        bottom: 0;
-     }.boxGroup:hover .card-5{
-        left: auto;
-        bottom: 0;
-     }
-*/
 
 .grouping-1{
     display: flex;
@@ -886,6 +839,7 @@
 @media screen and (max-width: 425px){
     .grouping-1{
         height: 73vw;
+        display: none;
         bottom: 59%;
         overflow: hidden;
     }
@@ -945,6 +899,11 @@
     font-size: 1.5vw;
     width: 92%;
 }
+@media screen and (max-width: 425px){
+    .paragraphSpecialists, .paragraphManagement, .paragraphProfessionals{
+        font-size: 4.5vw;
+    }
+}
 
 .boxStartups{
     background: #fff;
@@ -973,6 +932,11 @@
 .imgGroup{
     width: 80%;
 }
+@media screen and (max-width: 425px){
+    .imgGroup{
+        width: 70%;
+    }
+}
 
 .paragraphStartups{
     width: 95%;
@@ -980,7 +944,7 @@
 }
 @media screen and (max-width: 425px){
     .paragraphStartups{
-        font-size: 4vw;
+        font-size: 4.5vw;
         width: 74%;
     }
 }
@@ -1051,12 +1015,30 @@
     height: 9vw;
     width: 88%;
 }
+@media screen and (max-width: 425px){
+    .paragraphBusines{
+        font-size: 4.5vw;
+    }
+}
 
 .paragraphDistributed{
     display: flex;
     text-align: center;
     width: 80%;
     font-size: 1.5vw;
+}
+@media screen and (max-width: 425px){
+    .paragraphDistributed{
+        font-size: 4.5vw;
+    }
+}
+@media screen and (max-width: 425px){
+    .navigation-dot{
+        position: absolute;
+        top: 73%;
+        left: 37%;
+    }
+
 }
 /*Caixa com os cards*/
 
@@ -1215,12 +1197,6 @@ footer{
 .boxsStrytegy{
     display: flex;
     align-items: center;
-    
-}
-@media screen and (max-width: 425px){
-    .boxsStrytegy{
-
-    }
 }
 
 .logoFooter{
@@ -1368,3 +1344,113 @@ footer{
     }
 }
 
+
+
+/* Slideshow container */
+.slideshow-container{
+    display: none;
+}
+
+@media screen and (max-width: 425px){
+
+.slideshow-container {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    height: 73vw;
+    bottom: 46%;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .box-content-slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #22254B;
+    background: #fff;
+    width: 80%;
+    height: 63vw;
+    margin: auto;
+    border-radius: 16px;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+}

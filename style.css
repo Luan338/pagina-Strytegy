@@ -37,7 +37,7 @@
 }
 @media screen and (max-width: 425px){
     .boxLogo{
-        width: 28%;     
+        width: 30%;     
     }
 }
 
@@ -90,7 +90,7 @@
 @media screen and (max-width: 425px){
     #btnMenu{
         display: block;
-        width:  26%;
+        width:  33%;
     }
 }
 /*Botão Menu do mobile*/
@@ -128,14 +128,16 @@
         font-size: 4vw;
         width: 35%;
         height: 8vw;
+        color: #25294C;
     }
     .linkHeader1{
-        font-size: 3vw;
+        font-size: 4vw;
+        color: #25294C;
     }
-}
-
-.linkHeader, .linkHeader1{
-    color: #25294C;
+    .linkHeader{
+        font-size: 4vw;
+        color: #25294C;
+    }
 }
 /*Fim da lista da nav da Header*/
 
@@ -173,10 +175,10 @@
 }
 @media screen and (max-width: 425px){
     .btnEnter{
-        margin: -9% 0 4% -153%;
-        width: 71%;
-        font-size: 3vw;
-        height: 7vw;
+        margin: -9% 0 15% -153%;
+        width: 100%;
+        font-size: 4vw;
+        height: 10vw;
     }
 }
 
@@ -193,6 +195,8 @@
 @media screen and (max-width: 425px){
     .btnLinguage{
         margin-left: -154%;
+        padding: 6%;
+        font-size: 2vw;
     }
 }
 /* Fim botões da Header*/
